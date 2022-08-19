@@ -9,6 +9,10 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
     {
         public const string DEFAUlt_SCHEMA = "dbo";
 
+        public BlazorSozlukContext()
+        {
+
+        }
         public BlazorSozlukContext( DbContextOptions options) : base(options)
         {
 
@@ -29,6 +33,21 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
         public DbSet<EntryCommentFavorite> EntryCommentFavorites { get; set; }
 
         public DbSet<EmailConfirmation> EmailConfirmations { get; set; }
+
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if(!optionsBuilder.IsConfigured)
+            {
+                var connStr = "Server=localhost,1444;Database=blazorsozluk;Persist Security Info=True;User=sa;Password=Password12*";
+                optionsBuilder.UseSqlServer(connStr, opt =>
+                {
+                    opt.EnableRetryOnFailure();
+                });
+
+            }
+            base.OnConfiguring(optionsBuilder);
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
