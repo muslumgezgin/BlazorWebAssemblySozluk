@@ -17,12 +17,14 @@
     <None Remove="EntryConfiguration\" />
     <None Remove="EntryConfiguration\Entry\" />
     <None Remove="EntryConfiguration\EntryComment\" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
     <Folder Include="EntryConfiguration\" />
     <Folder Include="EntryConfiguration\Entry\" />
     <Folder Include="EntryConfiguration\EntryComment\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Bogus" Version="34.0.2" />
