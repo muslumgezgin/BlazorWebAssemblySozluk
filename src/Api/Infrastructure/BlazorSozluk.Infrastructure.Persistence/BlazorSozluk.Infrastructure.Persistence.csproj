@@ -18,6 +18,7 @@
     <None Remove="EntryConfiguration\Entry\" />
     <None Remove="EntryConfiguration\EntryComment\" />
     <None Remove="Extensions\" />
+    <None Remove="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
@@ -25,6 +26,7 @@
     <Folder Include="EntryConfiguration\Entry\" />
     <Folder Include="EntryConfiguration\EntryComment\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Bogus" Version="34.0.2" />
@@ -39,5 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\BlazorSozluk.Api.Domain\BlazorSozluk.Api.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\BlazorSozluk.Api.Application\BlazorSozluk.Api.Application.csproj" />
   </ItemGroup>
 </Project>
