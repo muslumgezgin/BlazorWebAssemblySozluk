@@ -9,9 +9,19 @@
   <ItemGroup>
     <None Remove="ViewModels\" />
     <None Remove="Infrastructure\" />
+    <None Remove="ViewModels\RequestModels\" />
+    <None Remove="ViewModels\Queries\" />
+    <None Remove="MediatR" />
+    <None Remove="Infrastructure\Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />
     <Folder Include="Infrastructure\" />
+    <Folder Include="ViewModels\RequestModels\" />
+    <Folder Include="ViewModels\Queries\" />
+    <Folder Include="Infrastructure\Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
   </ItemGroup>
 </Project>
