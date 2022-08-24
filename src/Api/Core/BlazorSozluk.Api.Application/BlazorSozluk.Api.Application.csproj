@@ -9,12 +9,44 @@
   <ItemGroup>
     <None Remove="Interfaces\" />
     <None Remove="Interfaces\Repositories\" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="MediatR" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Extensions\" />
+    <None Remove="Features\" />
+    <None Remove="Features\Commands\" />
+    <None Remove="Features\Queries\" />
+    <None Remove="Features\Commands\User\" />
+    <None Remove="Microsoft.Extensions.Configuration.Abstractions" />
+    <None Remove="Mapping\" />
+    <None Remove="Microsoft.IdentityModel.Tokens" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
     <Folder Include="Interfaces\Repositories\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\Commands\" />
+    <Folder Include="Features\Queries\" />
+    <Folder Include="Features\Commands\User\" />
+    <Folder Include="Mapping\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlazorSozluk.Api.Domain\BlazorSozluk.Api.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.2.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.0" />
   </ItemGroup>
 </Project>
